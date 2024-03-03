@@ -1,13 +1,13 @@
 export type Position = {
   id: number;
-  asset: string;
+  asset: number;
   quantity: number;
   asOf: string;
   price: number;
 }
 
 export type Portfolio = {
-  id: string;
+  id: number;
   asOf: string;
   positions: Position[];
 }

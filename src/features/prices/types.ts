@@ -1,7 +1,8 @@
 export type Price = {
-  id: string;
-  asset: string;
+  id: number;
+  asset: number;
   price: number;
+  asOf: string;
 }
 
 export type PricesState = {

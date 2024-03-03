@@ -1,20 +1,20 @@
 import axios from 'axios';
 import { AppDispatch } from '../../store/store';
-import { fetchPortfolioStart, fetchPortfolioSuccess, fetchPortfolioError } from './portfoliosSlice';
+import { fetchPortfoliosStart, fetchPortfoliosSuccess, fetchPortfoliosError } from './portfoliosSlice';
 
 const BASE_URL = 'https://your-api-base-url.com';
 
 export const fetchPortfolio = (asOf?: string) => (dispatch: AppDispatch) => {
-  dispatch(fetchPortfolioStart());
+  dispatch(fetchPortfoliosStart());
 
   const params = { asOf };
 
   axios
     .get(`${BASE_URL}/portfolios`, { params })
     .then((response) => {
-      dispatch(fetchPortfolioSuccess(response.data));
+      dispatch(fetchPortfoliosSuccess(response.data));
     })
     .catch((error) => {
-      dispatch(fetchPortfolioError(error.message));
+      dispatch(fetchPortfoliosError(error.message));
     });
 };

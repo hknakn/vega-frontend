@@ -3,7 +3,6 @@ import rootReducer, { RootState } from './rootReducer';
 
 const store = configureStore({
   reducer: rootReducer,
-  // Add any middleware or other store configurations here
 });
 
 export type AppDispatch = typeof store.dispatch;
