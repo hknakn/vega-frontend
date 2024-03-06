@@ -1,6 +1,10 @@
-# Financial Portfolio App
+# Portfolio App
 
 ## Preview
+
+
+
+https://github.com/hknakn/vega-frontend/assets/23198534/483912ad-34ad-4bb4-835c-fefa9f9db759
 
 
 
@@ -38,6 +42,6 @@
 
 ## Future Enhancements
 
-1. Implement user authentication for personalized portfolio tracking.
+1. Store data on Redux.
 2. Integrate with financial APIs for real-time data updates.
 3. Enhance charts with more interactive features.
